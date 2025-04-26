@@ -21,3 +21,13 @@ fetch(`https://api.github.com/users/${username}/repos`)
   .catch((error) => {
     console.error("Error fetching repos:", error);
   });
+
+
+function toggleProjects() {
+  const projectList = document.getElementById("project-list");
+  if (projectList.style.display === "none") {
+    projectList.style.display = "block";
+  } else {
+    projectList.style.display = "none";
+  }
+}

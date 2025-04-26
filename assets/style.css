@@ -61,3 +61,27 @@ a {
   padding: 40px;
   flex-grow: 1;
 }
+
+.toggle-btn {
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  color: #007acc;
+}
+
+.toggle-btn:hover {
+  text-decoration: underline;
+}
+
+.sub-nav {
+  list-style: none;
+  padding-left: 15px;
+  margin-top: 8px;
+}
+
+.sub-nav li {
+  font-weight: normal;
+  margin: 6px 0;
+}
