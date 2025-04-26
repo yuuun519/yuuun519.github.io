@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>유윤의 프로젝트 모음</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>✨ 유윤의 프로젝트 리스트 ✨</h1>
+  <ul id="repo-list"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
