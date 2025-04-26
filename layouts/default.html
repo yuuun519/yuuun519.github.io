@@ -8,26 +8,20 @@
 </head>
 <body>
   <div class="layout">
-    <aside class="sidebar">
-      <h2>✨ 유윤</h2>
-      <ul class="nav-section">
-  <li><a href="/">🏠 홈</a></li>
-
-  <li>
-    <button class="toggle-btn" onclick="toggleProjects()">📂 진행한 프로젝트</button>
-    <ul id="project-list" class="sub-nav" style="display: none;">
-      <li><a href="/projects/project1.html">○ 첫 번째</a></li>
-      <li><a href="/projects/project2.html">○ 두 번째</a></li>
-      <li><a href="/projects/project3.html">○ 세 번째</a></li>
-      <li><a href="/projects/project4.html">○ 네 번째</a></li>
+  <aside class="sidebar">
+    <h2>✨ 유윤</h2>
+    <ul class="nav-section">
+      <li><a href="/">🏠 홈</a></li>
+      <li>
+        <button class="toggle-btn" onclick="toggleProjects()">📂 진행한 프로젝트</button>
+        <ul id="project-list" class="sub-nav" style="display: none;">
+          <li><a href="/projects/project1.html">○ 첫 번째</a></li>
+        </ul>
+      </li>
+      <li><a href="https://your-blog.com" target="_blank">📝 블로그</a></li>
+      <li><a href="https://notion.so/your-portfolio" target="_blank">📁 포트폴리오</a></li>
     </ul>
-  </li>
-
-  <li><a href="https://your-blog-link.com" target="_blank">📝 개인 블로그</a></li>
-  <li><a href="https://notion.so/your-portfolio-link" target="_blank">📁 포트폴리오</a></li>
-</ul>
-
-    </aside>
+  </aside>
 
     <main class="content">
       {{ content }}

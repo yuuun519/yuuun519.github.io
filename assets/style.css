@@ -38,14 +38,22 @@ a {
 
 .layout {
   display: flex;
-  min-height: 100vh;
 }
 
 .sidebar {
-  width: 220px;
-  background: #f9f9f9;
+  width: 240px;
+  background: #f5f5f5;
   padding: 20px;
   border-right: 1px solid #ccc;
+  height: 100vh;
+  position: fixed;
+  overflow-y: auto;
+}
+
+.content {
+  margin-left: 260px;
+  padding: 40px;
+  flex-grow: 1;
 }
 
 .sidebar ul {
@@ -57,10 +65,6 @@ a {
   margin: 10px 0;
 }
 
-.content {
-  padding: 40px;
-  flex-grow: 1;
-}
 
 .toggle-btn {
   background: none;
