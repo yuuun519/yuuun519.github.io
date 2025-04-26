@@ -35,3 +35,29 @@ a {
   font-size: 18px;
   font-weight: bold;
 }
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+.content {
+  padding: 40px;
+  flex-grow: 1;
+}
