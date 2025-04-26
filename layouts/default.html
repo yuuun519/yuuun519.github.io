@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <script src="/assets/script.js"></script>
+</head>
+<body>
+  <header>
+    <h1><a href="{{ "/" | relative_url }}">유윤의 블로그</a></h1>
+    <hr>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+</body>
+</html>
