@@ -224,6 +224,12 @@ hr {
   display: block;
 }
 
+.sidebar-separator {
+  margin: 24px 0;         /* 위아래 간격 */
+  border: none;
+  border-top: 1px solid #ddd; /* 연한 회색 선 */
+}
+
 /* 📌 반응형 */
 @media screen and (max-width: 768px) {
   .sidebar {
