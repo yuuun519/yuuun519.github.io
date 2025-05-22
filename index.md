@@ -3,10 +3,9 @@ layout: default
 title: 윤채연 - 포토폴리오
 ---
 
-# 안녕하세요,
-# 세상의 미래를 찾아가는 윤채연입니다.
+# 안녕하세요, <br> 세상의 미래를 찾아가는 윤채연입니다.
 
-어려운 문제 앞에서도 포기하지 않고, 스스로를 확장해왔습니다.
+어려운 문제 앞에서도 포기하지 않고, 스스로를 확장해왔습니다. <br>
 명확한 목표와 실행 권한이 주어질 때, 스스로 방향을 정의하고 결과를 만들어내는 환경을 찾아갑니다.
 
 
@@ -24,7 +23,7 @@ title: 윤채연 - 포토폴리오
 - 포트폴리오: [Notion 이력서 보기](https://notion.so/your-resume-link)  
 - 이메일: yuuun519@gmail.com  
 **📄 이력서 다운로드**  
-[이력서 다운로드하기](/assets/3.신청서식.pdf){: .download-btn download}
+<a href="/assets/resume.pdf" download class="download-btn">📄 이력서 다운로드</a>
 
 ---
 
