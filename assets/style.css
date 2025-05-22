@@ -72,24 +72,13 @@ body {
   color: #264e70;
 }
 
-/* 접혔다 펴지는 프로젝트 목록 */
 
-.sub-nav {
-  list-style: none;
-  padding-left: 14px;
-  margin-top: 6px;
-}
-
-.sub-nav li {
-  margin-bottom: 10px;
-  font-weight: normal;
-}
 
 /* 콘텐츠 */
 .content {
-  margin-left: 240px;
+  margin-left: 400px;
   padding: 60px 40px;
-  max-width: 820px;
+  max-width: 900px;
   width: 100%;
   box-sizing: border-box;
 }
