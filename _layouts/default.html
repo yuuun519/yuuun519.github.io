@@ -7,6 +7,11 @@
   <script src="/assets/script.js"></script>
 </head>
 <body>
+<!-- 메뉴바 -->
+<header class="mobile-header">
+  <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+</header>
+ <div id="overlay" class="overlay" onclick="toggleSidebar()"></div>
   <div class="layout">
   <aside class="sidebar">
     <h2>안녕하세요!</h2>
@@ -16,12 +21,12 @@
       <li>
 PROJECT LIST
   <ul id="project-list" class="sub-nav" style="display: block;">
-    <li><a href="/post/project1.html">▸비대면 환자 시스템</a></li>
-  </ul>
-<li><a href="/post/project2.html">▸REAT 앱 이식</a></li>
+	<li><a href="/post/project1.html">▸비대면 환자 시스템</a></li>
+	<li><a href="/post/project2.html">▸REAT 앱 이식</a></li>
   </ul>
 </li>
 
+<ul>
       <li><a href="https://velog.io/@yuuun519/posts" target="_blank">블로그</a></li>
     </ul>
   </aside>

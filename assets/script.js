@@ -31,3 +31,16 @@ function toggleProjects() {
     projectList.style.display = "none";
   }
 }
+
+function toggleSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  const overlay = document.getElementById("overlay");
+
+  sidebar.classList.toggle("active");
+
+  if (sidebar.classList.contains("active")) {
+    overlay.style.display = "block";
+  } else {
+    overlay.style.display = "none";
+  }
+}
