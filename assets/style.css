@@ -208,12 +208,17 @@ hr {
 @media screen and (max-width: 768px) {
   .sidebar {
     position: fixed;
-    left: -100%;
+    top: 0;
+    left: -100%; /* ✅ 기본 숨김 */
     transition: left 0.3s ease-in-out;
+    z-index: 1000;
+    padding-top: 60px;
+    width: 100%; /* or 80% if you want it narrower */
+    background: white;
   }
 
   .sidebar.active {
-    left: 0;
+    left: 0; /* ✅ 햄버거 메뉴 눌렀을 때만 나타남 */
   }
 
   .mobile-header {
@@ -222,17 +227,18 @@ hr {
     top: 0;
     left: 0;
     right: 0;
+    height: 60px;
     background: #fff;
     border-bottom: 1px solid #ddd;
     z-index: 1001;
   }
 
-  .content {
-    margin-left: 0;
-    padding-top: 60px;
+  .only-desktop {
+    display: none; /* ✅ 모바일에서 안 보이게 */
   }
 
-  .only-desktop {
-    display: none;
+  .content {
+    margin-left: 0;
+    padding-top: 80px; /* 헤더 고려 */
   }
 }
