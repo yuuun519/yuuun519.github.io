@@ -1,7 +1,18 @@
-/* 기본 설정 */
+
+/*폰트*/
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* 설정 */
+
 body {
   margin: 0;
-  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  font-family: 'NanumSquareRound', sans-serif;
   background-color: #ffffff;
   color: #2c2c2c;
   line-height: 1.6;
@@ -15,7 +26,7 @@ body {
 
 /* 사이드바 */
 .sidebar {
-  width: 220px;
+  width: 350px;
   background-color: #ffffff;
   padding: 32px 20px;
   border-right: 1px solid #e6e6e6;
@@ -62,6 +73,7 @@ body {
 }
 
 /* 접혔다 펴지는 프로젝트 목록 */
+
 .sub-nav {
   list-style: none;
   padding-left: 14px;
