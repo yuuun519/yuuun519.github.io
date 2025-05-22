@@ -225,7 +225,7 @@ hr {
 /* 📌 반응형 (모바일) */
 @media screen and (max-width: 768px) {
   body {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .sidebar {
