@@ -162,7 +162,7 @@ p {
 
 .content li {
   padding-left: 0;
-  margin-bottom: 6px;    /* ✅ 항목 간격은 살짝 유지 (선택) */
+  margin-bottom: 5px;    /* ✅ 항목 간격은 살짝 유지 (선택) */
 }
 
 .content a {
@@ -254,6 +254,13 @@ hr {
     overflow-y: auto;
   }
 
+.sidebar h2 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #264e70;
+  margin-bottom: 15px;
+}
+
   .sidebar.active {
     left: 0;
   }
@@ -291,4 +298,5 @@ hr {
     font-size: 14px;
     margin-bottom: 2px;
   }
+
 }
