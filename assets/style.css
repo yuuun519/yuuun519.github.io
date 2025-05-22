@@ -81,10 +81,10 @@ p {
 .sub-nav {
   list-style: none;
   padding-left: 14px;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 .sub-nav li {
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   font-weight: normal;
 }
 
@@ -156,13 +156,13 @@ hr {
 .content h1 {
   font-size: 26px;
   line-height: 1.4;
-  margin-bottom: 12px;
+  margin-bottom: 4px;
 }
 
 .content p {
   font-size: 16px;
   line-height: 1.7;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .content li {
