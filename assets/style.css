@@ -233,7 +233,7 @@ hr {
 .sidebar-separator {
   border: none;
   border-top: 1px solid #ddd;
-  margin: 24px 0;
+  margin: 40px 0;
 }
 
 /* 📌 반응형 (모바일) */
@@ -281,7 +281,7 @@ hr {
   }
 
   .content h1 {
-    font-size: 22px; /* ✅ 적당한 모바일 제목 크기 복원 */
+    font-size: 20px; 
   }
 
   .nav-section a {
