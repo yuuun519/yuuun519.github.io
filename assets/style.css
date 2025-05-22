@@ -152,6 +152,18 @@ p {
   font-size: 15.5px;
   line-height: 1.6;
 }
+.content ul,
+.content ol {
+  list-style: none;      /* ✅ 동그라미(불릿) 제거 */
+  padding-left: 0;       /* ✅ 기본 들여쓰기 제거 */
+  margin-left: 0;
+}
+
+.content li {
+  padding-left: 0;
+  margin-bottom: 6px;    /* ✅ 항목 간격은 살짝 유지 (선택) */
+}
+
 .content a {
   font-size: 16px;
   color: #264e70;
