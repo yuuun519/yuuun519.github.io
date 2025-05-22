@@ -32,15 +32,15 @@ function toggleProjects() {
   }
 }
 
-function toggleSidebar() {
+function toggleSidebar(forceClose = false) {
   const sidebar = document.querySelector(".sidebar");
   const overlay = document.getElementById("overlay");
 
-  sidebar.classList.toggle("active");
-
-  if (sidebar.classList.contains("active")) {
-    overlay.style.display = "block";
-  } else {
+  if (forceClose || sidebar.classList.contains("active")) {
+    sidebar.classList.remove("active");
     overlay.style.display = "none";
+  } else {
+    sidebar.classList.add("active");
+    overlay.style.display = "block";
   }
 }

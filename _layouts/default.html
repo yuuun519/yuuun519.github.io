@@ -15,22 +15,27 @@
  <div id="overlay" class="overlay" onclick="toggleSidebar(true)"></div>
   <div class="layout">
   <aside class="sidebar">
+  <div class="profile-info only-desktop">
     <h2>안녕하세요!</h2>
-    <ul class="nav-section">
-      <li><a href="/">HOME</a></li>
-
-      <li>
-PROJECT LIST
-  <ul id="project-list" class="sub-nav" style="display: block;">
-<li><a href="/post/project1.html">▸비대면 환자 시스템</a></li>
-<li><a href="/post/project2.html">▸REAT 앱 이식</a></li>
-  </ul>
-</li>
-
-
-      <li><a href="https://velog.io/@yuuun519/posts" target="_blank">블로그</a></li>
+    <p>윤채연<br><a href="mailto:yuuun519@gmail.com">yuuun519@gmail.com</a></p>
+    <ul>
+      <li>2021.03, <strong>가톨릭관동대</strong> 입학</li>
+      <li>2023.03, <strong>가톨릭관동대</strong> 입학</li>
     </ul>
-  </aside>
+  </div>
+
+  <ul class="nav-section">
+    <li><a href="/">HOME</a></li>
+    <li>
+      PROJECT LIST
+      <ul class="sub-nav">
+        <li><a href="/post/project1.html">▸ 비대면 환자 시스템</a></li>
+        <li><a href="/post/project2.html">▸ REAT 앱 이식</a></li>
+      </ul>
+    </li>
+    <li><a href="https://velog.io/@yuuun519/posts" target="_blank">블로그</a></li>
+  </ul>
+</aside>
 
     <main class="content">
       {{ content }}
