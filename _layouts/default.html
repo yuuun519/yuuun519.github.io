@@ -2,41 +2,49 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ✅ 모바일 대응 핵심 -->
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="/assets/style.css">
-  <script src="/assets/script.js"></script>
+  <script src="/assets/script.js" defer></script> <!-- ✅ defer로 렌더링 완료 후 실행 -->
 </head>
 <body>
-<!-- 메뉴바 -->
-<header class="mobile-header">
-  <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
-</header>
 
- <div id="overlay" class="overlay" onclick="toggleSidebar(true)"></div>
+  <!-- ✅ 모바일 헤더 -->
+  <header class="mobile-header">
+    <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+  </header>
+
+  <!-- ✅ 오버레이 (모바일 블러 배경) -->
+  <div id="overlay" class="overlay" onclick="toggleSidebar(true)"></div>
+
   <div class="layout">
-  <aside class="sidebar">
-  <div class="profile-info only-desktop">
-    <h2>윤채연</h2>
-    <p class="email">yuuun519@gmail.com</p>
-    <ul class="timeline">
-      <li><span class="date">2021.03</span> 가톨릭관동대 입학</li>
-      <li><span class="date">2023.03</span> 가톨릭관동대 입학</li>
-    </ul>
-  </div>
+    <!-- ✅ 사이드바 -->
+    <aside class="sidebar">
+      <!-- ✅ 데스크탑 전용 프로필 -->
+      <div class="profile-info only-desktop">
+        <h2>윤채연</h2>
+        <p class="email">yuuun519@gmail.com</p>
+        <ul class="timeline">
+          <li><span class="date">2021.03</span> 가톨릭관동대 입학</li>
+          <li><span class="date">2023.03</span> 가톨릭관동대 입학</li>
+        </ul>
+      </div>
 
-  <ul class="nav-section">
-    <li><a href="/">HOME</a></li>
-    <li>
-      PROJECT LIST
-      <ul class="sub-nav">
-        <li><a href="/post/project1.html">▸ 비대면 환자 시스템</a></li>
+      <!-- ✅ 네비게이션 -->
+      <ul class="nav-section">
+        <li><a href="/">HOME</a></li>
+        <li>
+          PROJECT LIST
+          <ul class="sub-nav">
+            <li><a href="/post/project1.html">▸ 비대면 환자 시스템</a></li>
+            <li><a href="/post/project2.html">▸ REAT 앱 이식</a></li> <!-- 예시 추가 -->
+          </ul>
+        </li>
+        <li><a href="https://velog.io/@yuuun519/posts" target="_blank">블로그</a></li>
       </ul>
-    </li>
-    <li><a href="https://velog.io/@yuuun519/posts" target="_blank">블로그</a></li>
-  </ul>
-</aside>
+    </aside>
 
+    <!-- ✅ 본문 영역 -->
     <main class="content">
       {{ content }}
     </main>
