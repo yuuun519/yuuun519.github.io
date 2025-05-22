@@ -23,6 +23,8 @@ title: 윤채연 - 포토폴리오
 - GitHub: [yuuun519](https://github.com/yuuun519)  
 - 포트폴리오: [Notion 이력서 보기](https://notion.so/your-resume-link)  
 - 이메일: yuuun519@gmail.com  
+**📄 이력서 다운로드**  
+[이력서 다운로드하기](/assets/3.신청서식.pdf){: .download-btn download}
 
 ---
 

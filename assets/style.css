@@ -166,6 +166,21 @@ hr {
   margin: 30px 0;
 }
 
+.download-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #264e70;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+.download-btn:hover {
+  background-color: #1a3c56;
+}
+
 /* 📌 프로젝트 박스 */
 .project-block {
   background: #f9f9f9;
