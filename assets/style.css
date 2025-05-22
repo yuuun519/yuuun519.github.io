@@ -1,7 +1,7 @@
 /* 📌 폰트 */
 @font-face {
   font-family: 'NanumSquareRound';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -58,7 +58,7 @@ p {
   margin: 0;
 }
 .nav-section li {
-  margin-bottom: 18px;
+  margin-bottom: 8px; /* ✅ 간격 줄임 */
 }
 .nav-section a,
 .toggle-btn {
@@ -67,7 +67,7 @@ p {
   color: #2c2c2c;
   text-decoration: none;
   font-size: 16px;
-  padding: 6px 0;
+  padding: 4px 0; /* ✅ 더 촘촘한 느낌 */
   display: block;
   font-weight: 500;
 }
@@ -133,13 +133,27 @@ p {
   box-sizing: border-box;
   z-index: 1;
 }
-.content h1,
+.content h1 {
+  font-size: 26px;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
 .content h2,
 .content h3 {
   color: #2c2c2c;
   margin-top: 2px;
 }
+.content p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+.content li {
+  font-size: 15.5px;
+  line-height: 1.6;
+}
 .content a {
+  font-size: 16px;
   color: #264e70;
   text-decoration: none;
 }
@@ -151,29 +165,6 @@ hr {
   border-top: 1px solid #e6e6e6;
   margin: 30px 0;
 }
-
-/* 📌 본문 텍스트 크기 조정 */
-.content h1 {
-  font-size: 26px;
-  line-height: 1.4;
-  margin-bottom: 4px;
-}
-
-.content p {
-  font-size: 16px;
-  line-height: 1.7;
-  margin-bottom: 8px;
-}
-
-.content li {
-  font-size: 15.5px;
-  line-height: 1.6;
-}
-
-.content a {
-  font-size: 16px;
-}
-
 
 /* 📌 프로젝트 박스 */
 .project-block {
@@ -207,7 +198,7 @@ hr {
   font-size: 24px;
   padding: 16px;
   cursor: pointer;
-  color: #2c2c2c; /* ✅ iOS 파란색 방지 */
+  color: #2c2c2c;
   -webkit-appearance: none;
   text-decoration: none;
 }
@@ -225,13 +216,17 @@ hr {
 }
 
 .sidebar-separator {
-  margin: 24px 0;         /* 위아래 간격 */
   border: none;
-  border-top: 1px solid #ddd; /* 연한 회색 선 */
+  border-top: 1px solid #ddd;
+  margin: 24px 0;
 }
 
-/* 📌 반응형 */
+/* 📌 반응형 (모바일) */
 @media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
   .sidebar {
     position: fixed;
     top: 0;
@@ -240,10 +235,11 @@ hr {
     height: 100vh;
     background: white;
     z-index: 1000;
-    padding-top: 60px;
+    padding-top: 100px;
     transition: left 0.3s ease-in-out;
     overflow-y: auto;
   }
+
   .sidebar.active {
     left: 0;
   }
@@ -261,33 +257,16 @@ hr {
 
   .content {
     margin-left: 0;
-    padding-top: 80px;
+    padding-top: 100px;
     z-index: 1;
   }
 
   .only-desktop {
     display: none !important;
   }
-}
 
-@media screen and (max-width: 768px) {
-  /* 📌 전체 폰트 크기 축소 */
-  body {
-    font-size: 14px;
-  }
-
-  .sidebar {
-    padding-top: 100px; /* 기존보다 조금 더 내리기 */
-  }
-
-  .content {
-    padding-top: 100px; /* 본문도 더 여유 있게 */
-  }
-
-  .content h1,
-  .content h2,
-  .content h3 {
-    font-size: 18px;  /* 모바일에서는 제목도 작게 */
+  .content h1 {
+    font-size: 22px; /* ✅ 적당한 모바일 제목 크기 복원 */
   }
 
   .nav-section a {
@@ -297,11 +276,5 @@ hr {
   .sub-nav li {
     font-size: 14px;
     margin-bottom: 2px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 20px;
   }
 }
