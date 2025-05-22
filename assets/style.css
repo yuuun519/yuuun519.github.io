@@ -48,7 +48,7 @@ p {
   font-size: 18px;
   font-weight: bold;
   color: #264e70;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 /* 📌 네비게이션 */
@@ -84,7 +84,7 @@ p {
   margin-top: 6px;
 }
 .sub-nav li {
-  margin-bottom: 2px;
+  margin-bottom: 4px;
   font-weight: normal;
 }
 
@@ -151,6 +151,29 @@ hr {
   border-top: 1px solid #e6e6e6;
   margin: 40px 0;
 }
+
+/* 📌 본문 텍스트 크기 조정 */
+.content h1 {
+  font-size: 26px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.content p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.content li {
+  font-size: 15.5px;
+  line-height: 1.6;
+}
+
+.content a {
+  font-size: 16px;
+}
+
 
 /* 📌 프로젝트 박스 */
 .project-block {
@@ -248,7 +271,7 @@ hr {
   }
 
   .sidebar {
-    padding-top: 80px; /* 기존보다 조금 더 내리기 */
+    padding-top: 100px; /* 기존보다 조금 더 내리기 */
   }
 
   .content {
