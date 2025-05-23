@@ -2,7 +2,6 @@
 layout: default
 title: 윤채연 - 포토폴리오
 ---
-ver.0.0.18
 
 # 안녕하세요, <br> 세상의 미래를 찾아가는 윤채연입니다.
 <br>
@@ -14,7 +13,7 @@ ver.0.0.18
 
 GitHub: [yuuun519](https://github.com/yuuun519)  
 이메일: yuuun519@gmail.com  
-이력서 : [이력서 다운로드](/assets/3.신청서식.pdf)
+이력서 : [이력서 다운로드](.pdf)
 
 ---
 

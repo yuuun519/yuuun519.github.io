@@ -50,6 +50,14 @@ p {
   color: #264e70;
   margin-bottom: 15px;
 }
+.sidebar-footer {
+  font-size: 12px;
+  color: #999;                 /* ✅ 이메일과 같은 밝은 회색 */
+  margin-top: 40px;
+  text-align: center;
+  padding-top: 16px;
+  border-top: 1px solid #eee;  /* 윗부분 구분선 */
+}
 
 /* 📌 네비게이션 */
 .nav-section {
@@ -264,6 +272,7 @@ hr {
   .sidebar.active {
     left: 0;
   }
+
 
   .mobile-header {
     display: block;
