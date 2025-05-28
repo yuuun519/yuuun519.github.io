@@ -137,7 +137,7 @@ p {
   content: '';
   position: absolute;
   top: 30px; /* 선 시작점: 첫줄 아래 */
-  left: 25px;  /* 선 위치 (살짝 우측으로) */
+  left: 28px;  /* 선 위치 (살짝 우측으로) */
   width: 2px;
   height: calc(100% - 30px); /* 선 길이 */
   background: #ccc;
@@ -329,6 +329,22 @@ hr {
     z-index: 1;
   }
 
+.timeline li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 30px; /* 선 시작점: 첫줄 아래 */
+  left: 80px;  /* 선 위치 (살짝 우측으로) */
+  width: 2px;
+  height: calc(100% - 30px); /* 선 길이 */
+  background: #ccc;
+}
+.t-content p {
+  margin: 0;
+  font-size: 12px;
+  color: #444;
+  line-height: 1.6;
+}
+
   .only-desktop {
     display: none !important;
   }
@@ -338,7 +354,7 @@ hr {
   }
 
   .nav-section a {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .sub-nav li {
