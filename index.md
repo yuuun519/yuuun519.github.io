@@ -15,7 +15,7 @@ GitHub: [yuuun519](https://github.com/yuuun519)
 이메일: yuuun519@gmail.com  
 이력서 : [이력서 다운로드](.pdf)
 
-<h2 class="section-heading">학력</h2><hr class="section-divider">
+<h2 class="heading-with-line">학력</h2>
 
 <ul class="timeline">
   <li>
