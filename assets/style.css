@@ -345,6 +345,13 @@ hr {
   line-height: 1.6;
 }
 
+.sidebar h2 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #264e70;
+  margin-bottom: 15px;
+}
+
   .only-desktop {
     display: none !important;
   }
