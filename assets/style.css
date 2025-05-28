@@ -122,41 +122,51 @@ p {
 /* timeline*/
 .timeline {
   list-style: none;
-  padding-left: 24px;
+  padding: 0;
   margin: 0;
-  position: relative;
-  border-left: 2px solid #ccc;
 }
 
 .timeline li {
   position: relative;
-  margin-bottom: 24px;
-  padding-left: 80px; /* 선과 텍스트 간격 확보 */
+  margin-left: 20px;
+  padding-left: 16px;
+  margin-bottom: 40px;
 }
 
+.timeline li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 32px;          /* 날짜 아래에서 시작 */
+  left: 0;
+  width: 2px;
+  height: calc(100% - 32px);  /* 아래 내용까지만 선 */
+  background-color: #ccc;
+}
 
+.timeline-item {
+  position: relative;
+}
 
-.timeline-content {
-  font-size: 18px;
+.date {
+  font-weight: bold;
+  color: #264e70;
+  margin-right: 8px;
+  display: inline-block;
+  min-width: 70px;
+}
+
+.title {
+  font-weight: bold;
   color: #333;
 }
 
-.timeline-content .date {
-  font-weight: bold;
-  color: #264e70;
-  display: inline-block;
-  width: 80px; /* 날짜 고정 폭 */
-}
-
-.timeline-content .title {
-  font-weight: bold;
-}
-
-.timeline-content p {
-  margin: 4px 0 0 80px; /* 날짜 위치 맞춰서 들여쓰기 */
+.timeline-item p {
+  margin-left: 78px; /* 날짜 기준 정렬 */
+  margin-top: 4px;
   font-size: 14px;
-  line-height: 1.6;
+  color: #444;
 }
+
 
 
 .content {
