@@ -120,76 +120,56 @@ p {
 }
 
 /* timeline*/
-.timeline li {
-  display: flex;
-  align-items: center; /* 변경: 선 기준으로 항목 수직 정렬 */
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   position: relative;
-  margin-bottom: 32px; /* 간격 조정 */
+}
+
+.timeline li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+.timeline li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 30px; /* 선 시작점: 첫줄 아래 */
+  left: 4px;  /* 선 위치 (살짝 우측으로) */
+  width: 2px;
+  height: calc(100% - 30px); /* 선 길이 */
+  background: #ccc;
 }
 
 .item {
   display: flex;
-  align-items: center; /* 날짜, 선, 텍스트 정렬 */
-  position: relative;
-}
-
-.marker {
-  position: relative;
-  width: 20px;
-  min-width: 20px; /* 고정 넓이로 밀리지 않게 함 */
-  display: flex;
-  justify-content: center;
-}
-
-.marker::before {
-  content: '';
-  width: 10px;
-  height: 10px;
-  background-color: #264e70;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 50%;
-}
-
-.marker::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  transform: translateX(-50%);
-  left: 50%;
-  width: 2px;
-  height: 1000px; /* 충분히 길게 설정해서 자연스럽게 이어지게 */
-  background-color: #ccc;
-  z-index: -1;
-}
-
-.info {
-  margin-left: 12px;
+  align-items: flex-start;
 }
 
 .date {
   font-weight: bold;
   color: #264e70;
-  min-width: 60px; /* 날짜 크기 균일하게 */
-  text-align: right;
-  margin-right: 12px;
+  min-width: 70px;
+}
+
+.content {
+  margin-left: 10px;
 }
 
 .title {
   font-weight: bold;
   margin-bottom: 4px;
-  color: #333;
+  color: #2c2c2c;
 }
 
-.info p {
+.content p {
   margin: 0;
   font-size: 14px;
   color: #444;
   line-height: 1.6;
 }
-
 
 .content {
   margin-left: 400px;
