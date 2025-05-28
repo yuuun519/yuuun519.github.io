@@ -9,7 +9,8 @@ fetch(`https://api.github.com/users/${username}/repos`)
     const repoList = document.getElementById("repo-list");
 
     repos.forEach((repo) => {
-           if (!repo.fork) {
+      // 만약 Fork한 저장소는 빼고 싶으면 여기에 조건 추가 가능
+      if (!repo.fork) {
         const listItem = document.createElement("li");
         listItem.innerHTML = `<a href="${repo.html_url}" target="_blank">${repo.name}</a>`;
         repoList.appendChild(listItem);
