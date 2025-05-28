@@ -28,14 +28,14 @@ p {
 
 
 
-/* 📌 전체 구조 */
+
 .layout {
   display: flex;
   min-height: 100vh;
   position: relative;
 }
 
-/* 📌 사이드바 */
+
 .sidebar {
   width: 320px;
   background-color: #ffffff;
@@ -94,12 +94,12 @@ p {
 
 
 
-/
 .sub-nav {
   list-style: none;
   padding-left: 14px;
   margin-top: 4px;
 }
+
 .sub-nav li {
   margin-bottom: 2px;
   font-weight: normal;
@@ -127,6 +127,7 @@ p {
   border-left: 2px solid #ccc;
   position: relative;
 }
+
 .timeline li {
   position: relative;
   padding-left: 25px;
@@ -136,7 +137,7 @@ p {
 }
 
 .timeline li::before {
-  content: '•';
+  content: ' ';
   position: absolute;
   left: -12px;
   color: #264e70;
@@ -147,7 +148,7 @@ p {
   margin-right: 4px;
 }
 
-/* 📌 콘텐츠 */
+
 .content {
   margin-left: 400px;
   padding: 60px 40px;
@@ -178,14 +179,14 @@ p {
 
 .content ul,
 .content ol {
-  list-style: none;      /* ✅ 동그라미(불릿) 제거 */
-  padding-left: 0;       /* ✅ 기본 들여쓰기 제거 */
+  list-style: none;      
+  padding-left: 0;       
   margin-left: 0;
 }
 
 .content li {
   padding-left: 0;
-  margin-bottom: 5px;    /* ✅ 항목 간격은 살짝 유지 (선택) */
+  margin-bottom: 5px;   
 }
 
 .content a {
@@ -203,7 +204,7 @@ hr {
 }
 
 
-/* 📌 프로젝트 박스 */
+
 .project-block {
   background: #f9f9f9;
   padding: 20px 24px;
@@ -213,7 +214,6 @@ hr {
   box-shadow: none;
 }
 
-/* 📌 오버레이 */
 .overlay {
   position: fixed;
   top: 0;
@@ -225,7 +225,7 @@ hr {
   display: none;
 }
 
-/* 📌 모바일 헤더 */
+
 .mobile-header {
   display: none;
 }
@@ -247,7 +247,7 @@ hr {
   outline: none;
 }
 
-/* 📌 데스크탑 전용 요소 */
+
 .only-desktop {
   display: block;
 }
@@ -258,7 +258,8 @@ hr {
   margin: 40px 0;
 }
 
-/* 📌 반응형 (모바일) */
+
+/* mobile */
 @media screen and (max-width: 768px) {
   body {
     font-size: 13px;
@@ -323,4 +324,8 @@ hr {
     margin-bottom: 2px;
   }
 
+}
+
+ul, li {
+  list-style: none;
 }
