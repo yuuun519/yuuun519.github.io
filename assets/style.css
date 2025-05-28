@@ -333,7 +333,7 @@ hr {
   content: '';
   position: absolute;
   top: 30px; /* 선 시작점: 첫줄 아래 */
-  left: 45px;  /* 선 위치 (살짝 우측으로) */
+  left: 40px;  /* 선 위치 (살짝 우측으로) */
   width: 2px;
   height: calc(100% - 30px); /* 선 길이 */
   background: #ccc;
