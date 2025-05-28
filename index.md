@@ -32,6 +32,7 @@ GitHub: [yuuun519](https://github.com/yuuun519)
       <div class="t-date">2023.03</div>
       <div class="t-content">
         <div class="t-title">가톨릭관동대 입학</div>
+	<p>test 용 글입니다.<br>test용 글입니다.</p>
       </div>
     </div>
   </li>
