@@ -37,7 +37,7 @@ GitHub: [yuuun519](https://github.com/yuuun519)
   </li>
 <li>
     <div class="item">
-      <div class="date">2021.03</div>
+      <div class="date">2024.03</div>
       <div class="content">
         <div class="title">가톨릭관동대 입학2</div>
         <p>test 용 글입니다.<br>test용 글입니다.</p>
