@@ -19,27 +19,27 @@ GitHub: [yuuun519](https://github.com/yuuun519)
 
 <ul class="timeline">
   <li>
-    <div class="item">
-      <div class="date">2021.03</div>
-      <div class="content">
-        <div class="title">가톨릭관동대 입학</div>
+    <div class="t-item">
+      <div class="t-date">2021.03</div>
+      <div class="t-content">
+        <div class="t-title">가톨릭관동대 입학</div>
         <p>test 용 글입니다.<br>test용 글입니다.</p>
       </div>
     </div>
   </li>
   <li>
-    <div class="item">
-      <div class="date">2023.03</div>
-      <div class="content">
-        <div class="title">가톨릭관동대 입학</div>
+    <div class="t-item">
+      <div class="t-date">2023.03</div>
+      <div class="t-content">
+        <div class="t-title">가톨릭관동대 입학</div>
       </div>
     </div>
   </li>
 <li>
-    <div class="item">
-      <div class="date">2024.03</div>
-      <div class="content">
-        <div class="title">가톨릭관동대 입학2</div>
+    <div class="t-item">
+      <div class="t-date">2024.03</div>
+      <div class="t-content">
+        <div class="t-title">가톨릭관동대 입학2</div>
         <p>test 용 글입니다.<br>test용 글입니다.</p>
       </div>
     </div>

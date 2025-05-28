@@ -143,28 +143,28 @@ p {
   background: #ccc;
 }
 
-.item {
+.t-item {
   display: flex;
   align-items: flex-start;
 }
 
-.date {
+.t-date {
   font-weight: bold;
   color: #264e70;
   min-width: 70px;
 }
 
-.content {
+.t-content {
   margin-left: 10px;
 }
 
-.title {
+.t-title {
   font-weight: bold;
   margin-bottom: 4px;
   color: #2c2c2c;
 }
 
-.content p {
+.t-content p {
   margin: 0;
   font-size: 14px;
   color: #444;
