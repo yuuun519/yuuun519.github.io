@@ -122,52 +122,54 @@ p {
 /* timeline*/
 .timeline {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 .timeline li {
   position: relative;
-  margin-left: 20px;
-  padding-left: 16px;
+  padding-left: 20px;
   margin-bottom: 40px;
 }
 
 .timeline li:not(:last-child)::after {
   content: '';
   position: absolute;
-  top: 32px;          /* 날짜 아래에서 시작 */
-  left: 0;
+  top: 30px; /* 선 시작점: 첫줄 아래 */
+  left: 4px;  /* 선 위치 (살짝 우측으로) */
   width: 2px;
-  height: calc(100% - 32px);  /* 아래 내용까지만 선 */
-  background-color: #ccc;
+  height: calc(100% - 30px); /* 선 길이 */
+  background: #ccc;
 }
 
-.timeline-item {
-  position: relative;
+.item {
+  display: flex;
+  align-items: flex-start;
 }
 
 .date {
   font-weight: bold;
   color: #264e70;
-  margin-right: 8px;
-  display: inline-block;
   min-width: 70px;
+}
+
+.content {
+  margin-left: 10px;
 }
 
 .title {
   font-weight: bold;
-  color: #333;
+  margin-bottom: 4px;
+  color: #2c2c2c;
 }
 
-.timeline-item p {
-  margin-left: 78px; /* 날짜 기준 정렬 */
-  margin-top: 4px;
+.content p {
+  margin: 0;
   font-size: 14px;
   color: #444;
+  line-height: 1.6;
 }
-
-
 
 .content {
   margin-left: 400px;
