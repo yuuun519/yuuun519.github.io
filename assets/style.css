@@ -131,23 +131,13 @@ p {
 .timeline li {
   position: relative;
   margin-bottom: 24px;
-  padding-left: 16px; /* 선과 텍스트 간격 확보 */
+  padding-left: 80px; /* 선과 텍스트 간격 확보 */
 }
 
 
-.timeline li::before {
-  content: ' ';
-  width: 3px;
-  height: 3px;
-  background-color: #264e70;
-  border-radius: 50%;
-  position: absolute;
-  left: -4px; /* 선 중앙에 원 배치 */
-  top: 4px;
-}
 
 .timeline-content {
-  font-size: 14px;
+  font-size: 18px;
   color: #333;
 }
 
