@@ -2,38 +2,34 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ✅ 모바일 대응 핵심 -->
-  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>{{page.title }}</title>
   <link rel="stylesheet" href="/assets/style.css">
-  <script src="/assets/script.js" defer></script> <!-- ✅ defer로 렌더링 완료 후 실행 -->
+  <script src="/assets/script.js" defer></script> 
 </head>
-<body>
 
-  <!-- ✅ 모바일 헤더 -->
+
+<body>
   <header class="mobile-header">
     <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
   </header>
 
-  <!-- ✅ 오버레이 (모바일 블러 배경) -->
   <div id="overlay" class="overlay" onclick="toggleSidebar(true)"></div>
 
   <div class="layout">
-    <!-- ✅ 사이드바 -->
+
+    <!-- sidebar -->
+
     <aside class="sidebar">
-      <!-- ✅ 데스크탑 전용 프로필 -->
+      <!-- sidebar profile -->
       <div class="profile-info only-desktop">
         <h2>윤채연</h2>
         <p class="email">yuuun519@gmail.com</p>
-        <ul class="timeline">
-          <li><span class="date">2021.03</span> 가톨릭관동대 입학</li>
-          <li><span class="date">2023.03</span> 가톨릭관동대 입학</li>
-        </ul>
-      </div>
+       </div>
 
- <!-- ✅ 구분선 추가 -->
   <hr class="sidebar-separator">
 
-      <!-- ✅ 네비게이션 -->
+      <!-- list -->
       <ul class="nav-section">
         <li><a href="/">HOME</a></li>
         <li>
@@ -45,14 +41,14 @@
         </li>
         <li><a href="https://velog.io/@yuuun519/posts" target="_blank">블로그</a></li>
       </ul>
-<!-- ✅ 사이드바 하단 버전 정보 -->
+
+<!-- sidebar-footer -->
 <div class="sidebar-footer">
-  ver.0.0.20
+  ver.0.0.21
 </div>
     </aside>
 
 
-    <!-- ✅ 본문 영역 -->
     <main class="content">
       {{ content }}
     </main>
