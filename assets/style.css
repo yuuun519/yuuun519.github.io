@@ -124,52 +124,73 @@ p {
   list-style: none;
   margin: 0;
   padding: 0;
-  position: relative;
 }
 
 .timeline li {
+  display: flex;
+  align-items: flex-start;
   position: relative;
-  padding-left: 20px;
-  margin-bottom: 40px;
-}
-
-.timeline li:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  top: 30px; /* 선 시작점: 첫줄 아래 */
-  left: 4px;  /* 선 위치 (살짝 우측으로) */
-  width: 2px;
-  height: calc(100% - 30px); /* 선 길이 */
-  background: #ccc;
+  margin-bottom: 24px; /* 간격 조절 */
 }
 
 .item {
   display: flex;
   align-items: flex-start;
+  position: relative;
+}
+
+.marker {
+  position: relative;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.marker::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #264e70;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.marker::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: calc(100% - 12px);
+  background-color: #ccc;
+}
+
+.info {
+  margin-left: 8px;
 }
 
 .date {
   font-weight: bold;
   color: #264e70;
-  min-width: 70px;
-}
-
-.content {
-  margin-left: 10px;
 }
 
 .title {
   font-weight: bold;
   margin-bottom: 4px;
-  color: #2c2c2c;
+  color: #333;
 }
 
-.content p {
+.info p {
   margin: 0;
   font-size: 14px;
   color: #444;
   line-height: 1.6;
 }
+
 
 .content {
   margin-left: 400px;
